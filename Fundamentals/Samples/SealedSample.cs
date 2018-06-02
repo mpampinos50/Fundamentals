@@ -8,7 +8,8 @@ namespace Fundamentals.Samples
     {
         public static void Demo()
         {
-            Console.WriteLine($"Sealed {Environment.NewLine}");
+            Console.WriteLine($"Sealed");
+            Console.WriteLine();
 
             BaseClass parent = new BaseClass();
             parent.Method1();
@@ -22,7 +23,8 @@ namespace Fundamentals.Samples
             childB.Method1();
             childB.Method2(); // ChildA.Method2() will be shown since it cannot be further overriden
 
-            Console.WriteLine($"------------------------{Environment.NewLine}");
+            Console.WriteLine($"------------------------");
+            Console.WriteLine();
         }
 
         public class BaseClass

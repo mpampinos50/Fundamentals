@@ -8,7 +8,8 @@ namespace Fundamentals.Samples
     {
         public static void Demo()
         {
-            Console.WriteLine($"Simple Inheritance{Environment.NewLine}");
+            Console.WriteLine($"Simple Inheritance");
+            Console.WriteLine();
 
             BaseClass parent = new BaseClass();
             parent.Method1();
@@ -27,7 +28,8 @@ namespace Fundamentals.Samples
             parent2.Method1(); // calling BaseClass method
             parent2.Method2(); // derived method will run since it overrides BaseClass
 
-            Console.WriteLine($"------------------------{Environment.NewLine}");
+            Console.WriteLine($"------------------------");
+            Console.WriteLine();
         }
     }
 

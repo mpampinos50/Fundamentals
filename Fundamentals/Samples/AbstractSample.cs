@@ -8,7 +8,8 @@ namespace Fundamentals.Samples
     {
         public static void Demo()
         {
-            Console.WriteLine($"Simple Inheritance{Environment.NewLine}");
+            Console.WriteLine($"Simple Inheritance");
+            Console.WriteLine();
 
             // code below does not work because BaseClass cannot be directly instantiated
             //BaseClass parent = new BaseClass();
@@ -17,7 +18,8 @@ namespace Fundamentals.Samples
             childA.Method1();
             childA.Method2();
 
-            Console.WriteLine($"------------------------{Environment.NewLine}");
+            Console.WriteLine($"------------------------");
+            Console.WriteLine();
         }
 
         public abstract class BaseClass

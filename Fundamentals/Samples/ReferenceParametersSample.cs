@@ -4,17 +4,18 @@ using System.Text;
 
 namespace Fundamentals.Samples
 {
-    class ReferenceTypesSample
+    class ReferenceParametersSample
     {
         public static void Demo()
         {
-            Console.WriteLine($"Reference Types{Environment.NewLine}");
+            Console.WriteLine($"Reference Types");
+            Console.WriteLine();
 
             int refArg = 100;
             RefMethod(ref refArg);
             Console.WriteLine(refArg);
 
-            // int outArg; // can be used as well
+            //int outArg; // can be used as well
             OutMethod(out int outArg);
             Console.WriteLine(outArg);
 
@@ -22,7 +23,8 @@ namespace Fundamentals.Samples
             InMethod(in inArg);
             Console.WriteLine(inArg);
 
-            Console.WriteLine($"------------------------{Environment.NewLine}");
+            Console.WriteLine($"------------------------");
+            Console.WriteLine();
         }
 
         public static void RefMethod(ref int input)

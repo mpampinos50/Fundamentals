@@ -4,14 +4,17 @@ using System.Text;
 
 namespace Fundamentals.Samples
 {
-    public static class InterfaceInheritance
+    public static class InterfaceInheritanceSample
     {
         public static void Demo()
         {
-            Console.WriteLine($"Interface Inheritance{Environment.NewLine}");
+            Console.WriteLine($"Interface Inheritance");
+            Console.WriteLine();
 
             {
-                Console.WriteLine($"Type is class{Environment.NewLine}");
+                Console.WriteLine($"Type is class");
+                Console.WriteLine();
+
                 ChildA childA = new ChildA();
                 childA.Method1();
 
@@ -24,7 +27,10 @@ namespace Fundamentals.Samples
             }
 
             {
-                Console.WriteLine($"{Environment.NewLine}Type is interface{Environment.NewLine}");
+                Console.WriteLine();
+                Console.WriteLine($"Type is interface");
+                Console.WriteLine();
+
                 IInterfaceA childA = new ChildA();
                 childA.Method1();
 
@@ -40,7 +46,8 @@ namespace Fundamentals.Samples
                 childAB2.Method2();
             }
 
-            Console.WriteLine($"------------------------{Environment.NewLine}");
+            Console.WriteLine($"------------------------");
+            Console.WriteLine();
         }
 
         public interface IInterfaceA
